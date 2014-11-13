@@ -105,6 +105,8 @@ class SiteController extends AppController {
 				$text = preg_replace($regularForDescription['second'], '', $text);
 				$text = preg_replace($regularForDescription['third'], '', $text);
 				$text = preg_replace($regularForDescription['fourth'], '', $text);
+				$text = preg_replace($regularForDescription['fifth'], '', $text);
+				
 				$announcement_type = array();
 				foreach ($keywords as $key => $keyword) {
 					if(preg_match("/$keyword/i", $text, $matches)) {
@@ -133,7 +135,7 @@ class SiteController extends AppController {
 
 			foreach ($prices as $key => $price) {
 				$price = preg_replace($regularForPrice['second'], '', $price);
-
+				$price = preg_replace($regularForPrice['third'], '', $price);
 			}
 			$results[] = array(
 				'original_url' => $original_url,
@@ -149,7 +151,6 @@ class SiteController extends AppController {
 			); 
 			
 		}
-		
 		$this->set(array('results' => $results));
 	}
 

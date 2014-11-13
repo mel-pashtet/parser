@@ -37,9 +37,13 @@
 	Configure::write('sites',array(
 		'Ялта Кик' => array(
 			'homeUrl' => 'http://yalta-kik.com',
+			
 			'url' => 'http://yalta-kik.com/1-nedvizhimost-v-yalte',
+			
 			'nextPage' => '?start=',
+			
 			'keywords' => array('Агентство', 'агентстве', 'предлагает'),
+			
 			'regularForAllItems' => array(
 				'first' => '/a href=[\"]?[\/\d]+[-a-z\d]+[\/]+[\d-a-z]+/',
 				'second' => '/a href=[\"]?/',
@@ -55,7 +59,7 @@
 			'regularForPrice' => array(
 				'first' => '/Цена:<\/b>[$ \d]*[a-z]*[а-я]*[$]*/',
 				'second' => '/(^Цена:<\/b>)/',
-				
+				'third' => '/[а-я А-Я]+/',
 			),
 			
 			'regularForDescription' => array(
@@ -63,27 +67,33 @@
 				'second' => '/(^adsmanager_ads_desc">)/',
 				'third' => '/(<div class="adsmanager_ads_desc)/',
 				'fourth' => '/(<\/div>)/',
+				'fifth' => '/[<b>]+[<\/b> <br\>]+/',
 			),
+			
 			'regularForImages' => array(
 				'first' => '/<img[^>]+>/i',
 				'second' => '/<img[\s\S]+(http:\/\/)/',
 				'third' => '/[\'\"][\s\S]+alt=[\s\S]+/',
 			),
+			
 			'regularForPhone' => array(
 				'first' => '/Телефон:[\s\S]+E/',
 				'second' => '/[^+ 0-9]+/',
 			),
+			
 			'regularForEmail' => array(
 				'first' => '/Email:[\s \S]+<\/a><br/',
 				'second' => '/(^Email:[\S\s]+)\'>/',
 				'third' => '/(\/a[\s\S]+)/',
 				'fourth' => '/[\<]/',
 			),
+			
 			'regularForAuthor' => array(
 				'first' => '/Контактная информация:<[\s \S]+>Т/',
 				'second' => '/(^Контактная информация:<\/b>)/',
 				'third' => '/(<br[\S\s]+)/',
 			),
+			
 			'regularForType' => array(
 				'first' => '/[п, П]{1}род/',
 				'second' => '/[а, А]{1}рен/',
