@@ -1,0 +1,39 @@
+.form
+	= $this->Form->create('Item');
+	= $this->Form->input('select', array('options' => $select ? $select : null, 'label' => 'Показать одинаковые:'));
+	= $this->Form->end('Показать');
+
+.original-records
+	%h3
+		Потенциально от частного лица
+	- foreach ($originalRecords as $key => $originalRecord)
+		.item
+			.image-item
+				%img(src ="#{'http://'.reset($originalRecord['ItemPhotos'])['photo']}")
+			.item-title
+				= $originalRecord['Item']['title'];
+			.item-title
+				автор:
+				= $originalRecord['Item']['author'];
+			.item-title
+				телефон:
+				= $originalRecord['Item']['phone'];
+
+.similar-recors
+	%h3
+		Потенциально от риелтора
+	- foreach ($similarItems as $key => $similarItem)
+		.item
+			.image-item
+				%img(src ="#{'http://'.reset($similarItem['ItemPhotos'])['photo']}")
+			.item-title
+				= $similarItem['Item']['title'];
+			.item-title
+				автор:
+				= $similarItem['Item']['author'];
+			.item-title
+				телефон:
+				= $similarItem['Item']['phone'];
+			// %p
+			// 	= $similarItem[0]['Total']);
+	

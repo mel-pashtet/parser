@@ -1,0 +1,7 @@
+// - print_r($users);die;
+.form
+	= $this->Form->create('Post');
+	= $this->Form->input('text', array('label' => 'Текст'));
+	= $this->Form->input('user_id', array('options' => $users ? $users : null, 'label' => 'Пользователь'));
+	= $this->Form->hidden('id');
+	= $this->Form->end('Сохранить');

@@ -1,0 +1,5 @@
+.form
+	= $this->Form->create('User');
+	= $this->Form->input('user_name', array('label' => 'Имя пользователя'));
+	= $this->Form->hidden('id');
+	= $this->Form->end('Save');

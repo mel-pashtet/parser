@@ -1,0 +1,10 @@
+- if(!isset($post['Post']))
+	- return;
+.row-fluid
+	= $post['Post']['id']
+	'=>'
+	= $post['Post']['text']
+.update
+	= $this->Html->link('Редактировать пост', array('controller' => 'Posts', 'action' => 'postUpdate', $post['Post']['id']));
+.delete
+	= $this->Html->link('Удалить пост', array('controller' => 'Posts', 'action' => 'postDelete', $post['Post']['id']));

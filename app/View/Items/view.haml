@@ -1,0 +1,9 @@
+.row-fluid
+	= $user['User']['id']
+	'=>'
+	= $user['User']['user_name']
+
+.update
+	= $this->Html->link('Редактировать пользователя', array('controller' => 'Users', 'action' => 'userUpdate', $user['User']['id']));
+.delete
+	= $this->Html->link('Удалить пользователя', array('controller' => 'Users', 'action' => 'userDelete', $user['User']['id']));
