@@ -3,11 +3,14 @@
 class SiteController extends AppController {
 
 	public function index() {
+		$this->disableCache();
+		$hrefsFromDb = $this->requestAction('/items/getHrefList');
 		
 		$arrayRes = array();
 		$linksFromAllPages = array();
 		$allLinks = array();
 		$resultLinks = array();
+		$results = array();
 
 		$currentSite = Configure::read('currentSite');
 		
@@ -52,6 +55,13 @@ class SiteController extends AppController {
 				$resultLinks[$fullLinks] = $fullLinks;
 					
 				
+			}
+		}
+		foreach ($resultLinks as $key => $link) {
+			foreach ($hrefsFromDb as $keyFromDb => $linkFromDb) {
+				if($link == $linkFromDb) {
+					unset($resultLinks[$key]);
+				}
 			}
 		}
 		

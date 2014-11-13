@@ -11,6 +11,13 @@ class ItemsController extends AppController {
 
 	function create() {
 		$success = false;
+		$count = 0;
+		if(!isset($this->data['results'])) {
+			die (json_encode(array(
+				'success' => $success,
+				'count' => $count,
+			)));
+		}
 		foreach ($this->data['results'] as $key => $oneItem) {
 		
 			foreach ($oneItem as $key => $value) {
@@ -29,6 +36,7 @@ class ItemsController extends AppController {
 				$newItem = new $this->Item();
 				
 				if ($newItem->save($attr)) {
+					$count++;
 					$success = true;
 					
 					foreach ($photos as $key => $value) {
@@ -55,7 +63,7 @@ class ItemsController extends AppController {
 
 		echo json_encode(array(
 			'success' => $success,
-			'count' => count($this->data['results']),
+			'count' => $count,
 		));
 
 	}
@@ -131,6 +139,17 @@ class ItemsController extends AppController {
 		// print_r($searchField);
 		
 		$this->set(array('similarItems' => $similarItems, 'select' => $arraySelect, 'originalRecords' => $originalRecords));
+	}
+	public function getHrefList(){
+		$this->disableCache();
+		$this->autoRender = false;
+
+		$hrefs = $this->Item->find('list',
+			array(
+				'fields' => 'original_url',
+			)
+		);
+		return $hrefs;
 	}
 
 	

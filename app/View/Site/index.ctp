@@ -1,7 +1,6 @@
 <script>
 	$( document ).ready(function() {
 		var results = <? echo json_encode($results) ?>;
-		console.log(results);
 		$.ajax({
 			url: "items/create",
 			type: "POST",
@@ -16,7 +15,7 @@
 				if(success){
 					alert( 'Вставлено ' + count + ' записей' );
 				} else {
-					alert( 'Что-то не так!' );
+					alert( 'Ничего не вставлено' );
 				}
 			}
 		});

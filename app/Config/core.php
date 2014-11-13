@@ -101,6 +101,7 @@
 			),
 
 		),
+
 		'some' => array(
 			'url' => 'http://some',
 			'keywords' => array('some1', 'some2', 'some3')
