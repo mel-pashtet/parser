@@ -31,6 +31,40 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar');
-	public $viewClass = 'Haml.Haml';
+	public $helpers = array('CakeGrid.Grid',  'Session');
+	public $components = array(
+			'Session',
+			'Auth' => array(
+				'loginRedirect' => array(
+					'controller' => 'goods',
+					'action' => 'index'
+				),
+				'logoutRedirect' => array(
+					'controller' => 'goods',
+					'action' => 'index',
+					'home'
+				),
+				'authenticate' => array(
+					'Form' => array(
+						'passwordHasher' => 'Blowfish'
+					)
+				),
+				'authorize' => array('Controller'),
+				'RequestHandler'
+			)
+		);
+
+	public function beforeFilter() {
+		$this->Auth->allow('some');
+	}
+
+	public function isAuthorized($user) {
+	    // Admin can access every action
+	    if (isset($user)) {
+	        return true;
+	    }
+
+	    // Default deny
+	    return false;
+	}
 }

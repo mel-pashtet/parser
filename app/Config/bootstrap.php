@@ -71,6 +71,7 @@ Cache::config('default', array('engine' => 'File'));
 require_once APP . 'vendor' . DS . 'autoload.php';
 CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
 CakePlugin::load('Haml', array('bootstrap' => true));
+CakePlugin::loadAll();
 
 /**
  * You can attach event listeners to the request lifecycle as Dispatcher Filter. By default CakePHP bundles two filters:

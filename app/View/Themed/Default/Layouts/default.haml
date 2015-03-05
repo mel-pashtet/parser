@@ -1,0 +1,37 @@
+!!!
+%html
+	%head
+		%title= $title_for_layout
+		= $this->Html->charset('utf-8');
+		%meta{ :content => "", :name => "description" }
+		%meta{ :content => "", :name => "author" }
+		= $this->Html->script(array('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'));
+		// = $this->Html->script(array('parser'));
+
+	// = $this->Html->css('main')
+	= $this->Html->css('cake.generic')
+	= $this->fetch('css')
+	= $this->fetch('script')
+	%body
+		#container
+			#header
+				Manegment
+				:php
+					echo $this->Html->link('управление товарами',
+						array(
+							'controller' => 'goods',
+							'action' => 'index',
+							'full_base' => true
+						));
+					echo $this->Html->link('управление контрагентами',
+						array(
+							'controller' => 'sources',
+							'action' => 'index',
+							'full_base' => true
+						));
+			#content
+				= $this->fetch('content')
+
+		#footer
+			// = $this->element('sql_dump');
+			// = $this->Html->link($this->Html->image('cake.power.gif'), 'http://www.cakephp.org/', array('target' => '_blank', 'escape' => false))

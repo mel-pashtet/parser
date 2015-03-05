@@ -1,0 +1,10 @@
+.form
+	// - print_r($good['Good']);
+	= $this->Form->create('Good');
+	= $this->Form->input('alias', array('label' => 'Алиас', 'value' => isset($good) ? $good['Good']['alias'] : null ));
+	= $this->Form->input('Good.name', array('label' => 'Имя', 'value' => isset($good) ? $good['Good']['name'] : null ));
+	= $this->Form->input('Good.price_zakup', array('label' => 'Цена закупка', 'value' => isset($good) ? $good['Good']['price_zakup'] : null ));
+	= $this->Form->input('Good.price_prod', array('label' => 'Цена продажа', 'value' => isset($good) ? $good['Good']['price_prod'] : null ));
+	= $this->Form->input('Good.price_vozv', array('label' => 'Цена возврат', 'value' => isset($good) ? $good['Good']['price_vozv'] : null ));
+	= $this->Form->hidden('Good.id', array('value' => isset($good) ? $good['Good']['id'] : null ));
+	= $this->Form->end('Сохранить');

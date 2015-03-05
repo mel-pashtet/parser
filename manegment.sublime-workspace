@@ -1,0 +1,1634 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"result"
+			],
+			[
+				"response",
+				"response_status"
+			],
+			[
+				"error",
+				"error_log"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"ex",
+				"ext_node"
+			],
+			[
+				"append",
+				"appendChild"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"node",
+				"node1"
+			],
+			[
+				"tag",
+				"tagName"
+			],
+			[
+				"ta",
+				"tagName"
+			],
+			[
+				"arra",
+				"array_keys"
+			],
+			[
+				"bes",
+				"bestProfitOffersStore	Bestprofit.js"
+			],
+			[
+				"api",
+				"apiLeadvertex"
+			],
+			[
+				"se",
+				"send_values"
+			],
+			[
+				"xml",
+				"xml_template"
+			],
+			[
+				"dat",
+				"dates"
+			],
+			[
+				"ttn",
+				"ttnNumber1	Dott.js"
+			],
+			[
+				"count",
+				"countCalls"
+			],
+			[
+				"order",
+				"orderData"
+			],
+			[
+				"tt",
+				"ttn_number1	Dott.js"
+			],
+			[
+				"cdr",
+				"cdr_data"
+			],
+			[
+				"or",
+				"ordersArr"
+			],
+			[
+				"qs",
+				"qsApp"
+			],
+			[
+				"tota",
+				"totalCount"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"data",
+				"dataForAppCreator"
+			],
+			[
+				"qsAp",
+				"qsAppForCreator"
+			],
+			[
+				"inf",
+				"infoInArray"
+			],
+			[
+				"lay",
+				"layout"
+			],
+			[
+				"ob_get",
+				"ob_get_contents"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"base64",
+				"base64_encode"
+			],
+			[
+				"new",
+				"newApiKey"
+			],
+			[
+				"ap",
+				"apiKey"
+			],
+			[
+				"acc",
+				"accounts"
+			],
+			[
+				"rand",
+				"randNumber"
+			],
+			[
+				"va",
+				"valueOne"
+			],
+			[
+				"time",
+				"timezone"
+			],
+			[
+				"ran",
+				"randNumber"
+			],
+			[
+				"sta",
+				"startBad"
+			],
+			[
+				"one",
+				"oneRow"
+			],
+			[
+				"require",
+				"require(expressions, fn, scope)	foundation.js"
+			],
+			[
+				"pe",
+				"petja	server.js"
+			],
+			[
+				"cur",
+				"curlRes"
+			],
+			[
+				"exlo",
+				"explode"
+			],
+			[
+				"fu",
+				"fullLinks"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"offe",
+				"offers"
+			],
+			[
+				"pric",
+				"price"
+			],
+			[
+				"pri",
+				"priceData"
+			],
+			[
+				"re",
+				"ret	return"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"price",
+				"priceData"
+			],
+			[
+				"as",
+				"asXML"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"pre",
+				"preg_replace"
+			],
+			[
+				"array_m",
+				"array_multisort"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"htm",
+				"htmlspecialchars"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"ext",
+				"ext_status"
+			],
+			[
+				"bo",
+				"bodyStyle"
+			],
+			[
+				"if",
+				"iframe"
+			],
+			[
+				"ti",
+				"timezone"
+			],
+			[
+				"is",
+				"is_real"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"orde",
+				"order_id"
+			],
+			[
+				"e",
+				"ext_id"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"R",
+				"ResultRow"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"MYSQ",
+				"mysql_error"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"mysql_err",
+				"mysql_error"
+			],
+			[
+				"ins",
+				"insertArr"
+			],
+			[
+				"ph",
+				"phone"
+			],
+			[
+				"a",
+				"addItem"
+			],
+			[
+				"ua",
+				"uaCode"
+			],
+			[
+				"coun",
+				"countSumbolsUa"
+			],
+			[
+				"ru",
+				"ruCode"
+			],
+			[
+				"req",
+				"requestArr"
+			],
+			[
+				"erro",
+				"error_log"
+			],
+			[
+				"fi",
+				"field_value"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"pho",
+				"phoneTemplate"
+			],
+			[
+				"fie",
+				"field_value"
+			],
+			[
+				"fild",
+				"field_value"
+			],
+			[
+				"for",
+				"formField"
+			],
+			[
+				"phon",
+				"phone_id"
+			],
+			[
+				"get",
+				"getCmp"
+			],
+			[
+				"dis",
+				"displayField"
+			],
+			[
+				"_se",
+				"_SERVER"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Config/database.php",
+			"settings":
+			{
+				"buffer_size": 3037,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/User.php",
+			"settings":
+			{
+				"buffer_size": 724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Good.php",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/AppController.php",
+			"settings":
+			{
+				"buffer_size": 1897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 2404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Layouts/default.haml",
+			"settings":
+			{
+				"buffer_size": 1094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/GoodsController.php",
+			"settings":
+			{
+				"buffer_size": 3606,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Goods/index.haml",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/PostsController.php",
+			"settings":
+			{
+				"buffer_size": 1198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Users/add.ctp",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 314.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"setsNod",
+				"Snippet: Snippet: NodeJS EventEmitter"
+			],
+			[
+				"setsja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"setS",
+				"Set Syntax: PHP"
+			],
+			[
+				"mercur",
+				"Set Syntax: Mercurial Status Report"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"copy",
+				"Package Control: Create Binary Package File"
+			],
+			[
+				"xde",
+				"Xdebug: Stop Debugging (Launch Browser)"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"mer",
+				"Set Syntax: Mercurial Status Report"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 406.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/cakephp",
+		"/var/www/cakephp/app",
+		"/var/www/cakephp/app/Config",
+		"/var/www/cakephp/app/Controller",
+		"/var/www/cakephp/app/Model",
+		"/var/www/cakephp/app/View",
+		"/var/www/cakephp/app/View/Goods",
+		"/var/www/cakephp/app/View/Posts",
+		"/var/www/cakephp/app/View/Site",
+		"/var/www/cakephp/app/tmp",
+		"/var/www/cakephp/app/webroot",
+		"/var/www/cakephp/sass",
+		"/var/www/cakephp/sass/src"
+	],
+	"file_history":
+	[
+		"/var/www/cakephp/app/Model/ItemPhotos.php",
+		"/var/www/cakephp/app/View/Site/index.haml",
+		"/var/www/cakephp/app/View/Posts/posts_list.haml",
+		"/var/www/cakephp/app/View/Goods/add.ctp",
+		"/var/www/cakephp/app/Controller/SiteController.php",
+		"/var/www/cakephp/app/View/Items/list_items.haml",
+		"/var/www/cakephp/sass/src/main.scss",
+		"/var/www/cakephp/app/View/Users/add.ctp",
+		"/var/www/cakephp/app/View/Users/login.ctp",
+		"/var/www/cakephp/app/View/Pages/home.ctp",
+		"/var/www/cakephp/app/Controller/PagesController.php",
+		"/var/www/cakephp/app/Config/routes.php",
+		"/var/www/cakephp/app/Config/core.php",
+		"/var/www/cakephp/app/webroot/css/main.css",
+		"/var/www/cakephp/app/View/Layouts/myLayout.ctp",
+		"/var/www/cakephp/app/View/Items/create.haml",
+		"/var/www/cakephp/app/View/Posts/post_create.haml",
+		"/var/www/erm.cartli/ini/p_generator.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/log/reloadErrors-log.txt",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/np_en_Dott.php",
+		"/var/www/erm.cartli/services/api/external/cron/bestprofit/cron.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/reloadErrors.php",
+		"/var/www/erm.cartli/services/api/external/cron/leadvertext/cron.php",
+		"/var/www/erm.cartli/dobrik/cronTest.php",
+		"/var/www/erm.cartli/config/config.ini",
+		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/get_HotPartnerStat.php",
+		"/var/www/erm.cartli/ext-all-debug.js",
+		"/var/www/erm.cartli/block/modules/GlobalTimeSheet/handlers/get_user_tabel.php",
+		"/var/www/erm.cartli/block/json/get_StoreData.php",
+		"/var/www/erm.cartli/js/projectAnkets/Bestprofit.js",
+		"/var/www/erm.cartli/block/json/get_Terms.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/get_ElochkiList.php",
+		"/var/www/erm.cartli/js/ga.js",
+		"/var/www/erm.cartli/block/get_PersonalData.php",
+		"/var/www/erm.cartli/block/get_RusDostavka.php",
+		"/var/www/erm.cartli/block/get_palets_curl.php",
+		"/var/www/erm.cartli/block/get_CurierBraslet.php",
+		"/var/www/erm.cartli/block/get_CoffeeCity.php",
+		"/var/www/erm.cartli/block/getProjectJson.php",
+		"/var/www/erm.cartli/application/view/get-images.php",
+		"/var/www/erm.cartli/application/tree/get-nodes.php",
+		"/var/www/erm.cartli/application/sandbox/get-users.json",
+		"/var/www/erm.cartli/application/grid/get-images.php",
+		"/var/www/erm.cartli/block/modules/QueueStatNew/handlers/get_time.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/get_tinkoff.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/get_tinkoff.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/get_takibox.php",
+		"/var/www/erm.cartli/block/modules/GlobalTimeSheet/handlers/get_tabel.php",
+		"/var/www/erm.cartli/block/modules/CurrentTimeControl/handlers/get_tabel.php",
+		"/var/www/erm.cartli/block/modules/Canvass/handlers/get_tests.php",
+		"/var/www/erm.cartli/block/json/get_TimeZoneList.php",
+		"/var/www/erm.cartli/block/getall_Postman.php",
+		"/var/www/erm.cartli/services/get_orderTest.php",
+		"/var/www/erm.cartli/services/get_Monitor.php",
+		"/var/www/erm.cartli/services/getWeather.php",
+		"/var/www/erm.cartli/services/get.redis.php",
+		"/var/www/erm.cartli/block/get_weather.php",
+		"/var/www/erm.cartli/block/get_news.php",
+		"/var/www/erm.cartli/block/get_cities.php",
+		"/var/www/erm.cartli/block/get_callquality.php",
+		"/var/www/erm.cartli/block/get_birthday.php",
+		"/var/www/erm.cartli/dobrik/getTimeZone.php",
+		"/var/www/erm.cartli/js/projectAnkets/pkp.js",
+		"/var/www/erm.cartli/app.js",
+		"/var/www/erm.cartli/lib/IDS/vendors/htmlpurifier/HTMLPurifier/ConfigSchema/schema/Attr.DefaultTextDir.txt",
+		"/var/www/erm.cartli/js/projectAnkets/Dott.js",
+		"/var/www/erm.cartli/block/is_newCdr.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/bestprofit_A.js.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/dott_pro_P.js.php",
+		"/var/www/erm.cartli/js/ini/ini.js.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/set_Dott.php",
+		"/var/www/erm.cartli/services/api/external/ApiLeadvertex.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/set_Bestprofit.php",
+		"/var/www/erm.cartli/lib/db.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/Coffee.js.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/mbocash_P.js.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/hotpartner_P.js.php",
+		"/var/www/erm.cartli/js/projectAnkets/Hotpartner.js",
+		"/var/www/erm.cartli/builds/ext-all-sandbox-dev.js",
+		"/var/www/erm.cartli/builds/ext-all-sandbox-debug.js",
+		"/var/www/erm.cartli/builds/ext-all-sandbox.js",
+		"/var/www/erm.cartli/block/is_StaffLogged.php",
+		"/var/www/erm.cartli/index.php",
+		"/var/www/erm.cartli/services/api/log/bestprofit-cron-log.txt~",
+		"/var/www/erm.cartli/services/api/log/bestprofit-cron-log.txt",
+		"/var/www/erm.cartli/script.html",
+		"/var/www/erm.cartli/application/core/spotlight-example.js",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/ServerEvalTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/StringSetBit.php",
+		"/var/www/erm.cartli/bootstrap.js",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/set.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/get.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/class.api.php",
+		"/var/www/erm.cartli/services/xml.class.php",
+		"/var/www/erm.cartli/lib/PHPMailer/language/phpmailer.lang-ka.php",
+		"/var/www/erm.cartli/block/modules/Messages/handlers/get_youdo.php",
+		"/var/www/erm.cartli/services/callback/call_hangup_predictive.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/set.php",
+		"/var/www/erm.cartli/simpl5/src/tinySIP/src/api/tsip_api_publish.js",
+		"/var/www/erm.cartli/application/ux/TreePicker.js",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPersist.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeySort.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRestore.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRename.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRandom.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyMove.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyKeys.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyExpire.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyExists.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyDump.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyDelete.php",
+		"/var/www/erm.cartli/pkgs/ajax_post.php",
+		"/var/www/erm.cartli/simpl5/jsdoc-toolkit/app/plugins/frameworkPrototype.js",
+		"/var/www/erm.cartli/canvass/ckeditor/_source/plugins/keystrokes/plugin.js",
+		"/var/www/erm.cartli/dobrik/asterisk/usr/local/bin/dialout_predictive_lidvertex_kz.py",
+		"/var/www/erm.cartli/dobrik/potochka/kuznichuk/load_phones.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Cluster/Distribution/KetamaPureRingTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyRenamePreserveTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Cluster/Distribution/KetamaPureRing.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseTimeToLiveTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRenamePreserve.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/Processor/KeyPrefixProcessorTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseExpireAtTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPreciseTimeToLive.php",
+		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseExpireTest.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/Processor/KeyPrefixProcessor.php",
+		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPreciseExpireAt.php",
+		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/get_PkpList.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/var/www/erm.cartli/services/api/external/cron/bestprofit/cron.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"post",
+			"Posts",
+			"posts",
+			"12005375",
+			"count_store",
+			"insert_values",
+			"DB::update",
+			"error_log",
+			"DB::",
+			"DB::select",
+			"convert",
+			"$a",
+			"a",
+			"return $node;",
+			"$arr",
+			"arr",
+			"value",
+			"convert",
+			"getXMLRoot",
+			"gg",
+			"xml",
+			"appendChild",
+			"createXML",
+			"add_metters",
+			"for_filter",
+			"bestProfitOffersStore",
+			"globalDottProOffersStore",
+			"offer",
+			"v",
+			"get_Store",
+			"bestProfitOffersStore",
+			"store",
+			"201",
+			"Hotpartner",
+			"alias",
+			"globalDottProOffersStore",
+			"dottProOffersStore",
+			"DottProOffersStore",
+			"dottProOffersStore",
+			"get_StoreData",
+			"eader: I('offer')",
+			"hotpartnerKurierCitiesStore",
+			"get_StoreData",
+			"price",
+			"meekro_connect_erm",
+			"fio",
+			"date",
+			"bestprofit",
+			"BestProfit",
+			"bestprofit",
+			"count_store",
+			"app_code",
+			"count_store",
+			"get",
+			"get_list_services",
+			"list_services",
+			"\"",
+			"$result = call_user_func_array(array($api, 'send_services'), $send_values);",
+			"GLOBAL_PEREZVON_PLAN",
+			"countCalls",
+			"getProjectPerezvonDates",
+			"seta_out_P",
+			"base_Seta",
+			"dottWindow",
+			"console",
+			"setValue",
+			"preDott",
+			"getForm",
+			"dottForm_",
+			"ttn_number",
+			"'ttn_number1' + order_id",
+			"preDott",
+			"ttn_number1",
+			"preDott",
+			"allowBlank",
+			"Value",
+			"value",
+			"Value",
+			"value",
+			"ttn_number1",
+			"dottWindow",
+			"preDott",
+			"redirection",
+			"preDott",
+			"blur: functi",
+			"addListener",
+			"onblur",
+			"cdr_data.allHttpQuery",
+			"preDott",
+			"cdr_data",
+			"preDott",
+			"dottWindow",
+			"acceptFieldset",
+			"ttn_number",
+			"ttnElem",
+			"dot",
+			"bestprofit",
+			"bestprofitWindow",
+			"double",
+			"BestprofitForm_",
+			"sheet_name",
+			"statusBestprofit",
+			"statusLidvertex",
+			"lead_vertextTable_grid",
+			"lead_vertextTableGrid",
+			"storelead_vertext",
+			"lead_vertex_store",
+			"lead_vertextTableModel",
+			"addr",
+			"smar",
+			"smart_shopTable_grid",
+			"smart_shopTableGrid",
+			"storesmart_shop",
+			"smart_shopTableModel",
+			"statusSmartShop",
+			"smart_shopTab",
+			"smart_shopTableGrid",
+			"bestprofit",
+			"bestprofit_A",
+			"lidvertex_P",
+			"smart_shopTableGrid",
+			"bestprofit_A",
+			"bestprofitTableGrid",
+			"smart_shopTableGrid",
+			"smart_shop_store",
+			"storesmart_shop",
+			"bestprofitTableGrid",
+			"lead_vertex_store"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Config/database.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2741,
+								2741
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Model/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Model/Good.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Controller/AppController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1350,
+								1350
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Controller/UsersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/View/Layouts/default.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								625,
+								625
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP Haml/PHP Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/Controller/GoodsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/View/Goods/index.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP Haml/PHP Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/Controller/PostsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/View/Users/add.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 22.0
+	},
+	"project": "manegment.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pkp",
+				"js/projectAnkets/pkp.js"
+			],
+			[
+				"cron.",
+				"services/api/external/cron/bestprofit/cron.php"
+			],
+			[
+				"cronte",
+				"dobrik/cronTest.php"
+			],
+			[
+				"get_s",
+				"block/json/get_StoreData.php"
+			],
+			[
+				"",
+				"js/projectAnkets/Bestprofit.js"
+			],
+			[
+				"get_sto",
+				"block/json/get_StoreData.php"
+			],
+			[
+				"bes",
+				"block/modules/ProjectsData/bestprofit_A.js.php"
+			],
+			[
+				"is_new",
+				"block/is_newCdr.php"
+			],
+			[
+				"best",
+				"block/modules/Messages/handlers/set_Bestprofit.php"
+			],
+			[
+				"api",
+				"services/api/external/ApiLeadvertex.php"
+			],
+			[
+				"get.php",
+				"block/modules/Messages/handlers/pkp/get.php"
+			],
+			[
+				"set.php",
+				"block/modules/Messages/handlers/pkp/set.php"
+			],
+			[
+				"dott",
+				"js/projectAnkets/Dott.js"
+			],
+			[
+				"is_ne",
+				"block/is_newCdr.php"
+			],
+			[
+				"inco",
+				"services/callback/income_call_hangup.php"
+			],
+			[
+				"income",
+				"services/callback/income_call.php"
+			],
+			[
+				"get_u",
+				"block/modules/Messages/handlers/get_Universal.php"
+			],
+			[
+				"app.js.",
+				"examples/desktop/App.js.php"
+			],
+			[
+				"ap",
+				"app.js"
+			],
+			[
+				"dot_pr",
+				"block/modules/ProjectsData/dott_pro_P.js.php"
+			],
+			[
+				"set_le",
+				"block/modules/Messages/handlers/set_Leadvertex.php"
+			],
+			[
+				"cron",
+				"services/api/external/cron/leadvertext/cron.php"
+			],
+			[
+				"get_ho",
+				"block/modules/ProjectsData/handlers/get_HotPartnerList.php"
+			],
+			[
+				"acti",
+				"dobrik/activateOrder.php"
+			],
+			[
+				"get_universal",
+				"block/modules/Messages/handlers/get_Universal.php"
+			],
+			[
+				"con",
+				"config/config.ini"
+			],
+			[
+				"cronph",
+				"services/api/external/cron/leadvertext/cron.php"
+			],
+			[
+				"get_hotpartnerstat",
+				"block/modules/ProjectsData/handlers/get_HotPartnerStat.php"
+			],
+			[
+				"uti",
+				"ini/util.php"
+			],
+			[
+				"confi",
+				"config/config.ini"
+			],
+			[
+				"get_hot",
+				"block/modules/ProjectsData/handlers/get_HotPartnerList.php"
+			],
+			[
+				"apil",
+				"services/api/external/ApiLeadvertex.php"
+			],
+			[
+				"hot-log.tx",
+				"services/log/get_universal-hotpartner_P-log.txt"
+			],
+			[
+				"hot-log.t",
+				"services/log/get_universal-hotpartner_P-log.txt"
+			],
+			[
+				"cro",
+				"dobrik/cronTest.php"
+			],
+			[
+				"dot",
+				"js/projectAnkets/Dott.js"
+			],
+			[
+				"set",
+				"block/modules/Messages/handlers/set_Dott.php"
+			],
+			[
+				"apib",
+				"services/api/classes/ApiBase.php"
+			],
+			[
+				"set_en",
+				"block/modules/Messages/handlers/set_Energy.php"
+			],
+			[
+				"get_status",
+				"services/api/external/cpagetti/get_statuses.php"
+			],
+			[
+				"set_dot",
+				"block/modules/Messages/handlers/set_Dott.php"
+			],
+			[
+				"set_or",
+				"services/api/external/cpagetti/set_orders.php"
+			],
+			[
+				"get_off",
+				"services/api/external/cpagetti/get_offers.php"
+			],
+			[
+				"get_offers",
+				"block/json/get_CoffeeRegions.php"
+			],
+			[
+				"excel_reader2",
+				"lib/excel_reader2.php"
+			],
+			[
+				"upload",
+				"block/modules/ProjectsNew/handlers/upload_ankets.php"
+			],
+			[
+				"apileadvertex",
+				"services/api/external/ApiLeadvertex.php"
+			],
+			[
+				"gets",
+				"block/json/get_StoreData.php"
+			],
+			[
+				"config",
+				"config/config.ini"
+			],
+			[
+				"set_seta",
+				"block/modules/Messages/handlers/set_Seta.php"
+			],
+			[
+				"set_s",
+				"block/modules/Messages/handlers/set_SmartShop.php"
+			],
+			[
+				"get_seta",
+				"block/modules/ProjectsData/handlers/get_SetaList.php"
+			],
+			[
+				"get_li",
+				"block/modules/ProjectsData/handlers/get_LeadVertextList.php"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"ini.js",
+				"js/ini/ini.js.php"
+			],
+			[
+				"set_d",
+				"block/modules/Messages/handlers/set_Dott.php"
+			],
+			[
+				"set_sma",
+				"block/modules/Messages/handlers/set_SmartShop.php"
+			],
+			[
+				"setsma",
+				"block/modules/Messages/handlers/set_SmartShop.php"
+			],
+			[
+				"setl",
+				"block/modules/Messages/handlers/set_Leadvertex.php"
+			],
+			[
+				"uplo",
+				"block/modules/ProjectsNew/handlers/upload_ankets.php"
+			],
+			[
+				"upl",
+				"block/modules/QueueControl/handlers/upload_autocall.php"
+			],
+			[
+				"util",
+				"ini/util.php"
+			],
+			[
+				"app.js.php",
+				"examples/desktop/App.js.php"
+			],
+			[
+				"cron.php",
+				"services/api/external/cron/monsterleads/cron.php"
+			],
+			[
+				"ini_erm",
+				"ini/ini_erm.php"
+			],
+			[
+				"is_newcdr.php",
+				"block/is_newCdr.php"
+			],
+			[
+				"set_do",
+				"block/modules/Messages/handlers/set_Dott.php"
+			],
+			[
+				"is_stafloged",
+				"block/is_StaffLogged.php"
+			],
+			[
+				"setmessa",
+				"block/modules/Messages/handlers/set_Message.php"
+			],
+			[
+				"app.js",
+				"application/desktop/App.js"
+			],
+			[
+				"get_univ",
+				"block/modules/Messages/handlers/get_Universal.php"
+			],
+			[
+				"getstore",
+				"block/json/get_StoreData.php"
+			],
+			[
+				"get_mess",
+				"block/modules/Messages/handlers/get_Message.php"
+			],
+			[
+				"getflas",
+				"block/modules/Messages/handlers/get_FlashUnread.php"
+			],
+			[
+				"setdot",
+				"block/modules/Messages/handlers/set_Dott.php"
+			],
+			[
+				"get_ref",
+				"staff/block/json/get_refSet.php"
+			],
+			[
+				"get_sub",
+				"staff/block/json/get_SubUserList.php"
+			],
+			[
+				"application",
+				"lib/Application.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 438.0,
+		"selected_items":
+		[
+		],
+		"width": 333.0
+	},
+	"select_symbol":
+	{
+		"height": 151.0,
+		"selected_items":
+		[
+			[
+				"",
+				"APITest"
+			]
+		],
+		"width": 504.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"17":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"19":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"22":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"23":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"24":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"88":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

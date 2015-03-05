@@ -1,0 +1,26 @@
+:php
+	print_r($partners);die;
+	// $this->Grid->addColumn( __('شناسه'), "/Page/code",array('width' => '25%'));
+	$this->Grid->addColumn('Id', '/Good/id', array(
+		'width' => '15%',
+		'linkable' => array(
+			'url' => array(
+				'action' => 'details'
+			),
+			'trailingParams' => array(
+				'/Page/id'
+			)
+		)
+	));
+	
+	$this->Grid->addColumn('alias', '/Good/alias', array('width' => '15%'));
+	$this->Grid->addColumn('name', '/Good/name', array('width' => '15%'));
+	$this->Grid->addColumn('prise Zakup', '/Good/price_zakup', array('width' => '15%'));
+	$this->Grid->addColumn('prise Prod', '/Good/price_prod', array('width' => '15%'));
+	$this->Grid->addColumn('prise Vozv', '/Good/price_vozv', array('width' => '15%'));
+
+	$this->Grid->addAction('Delete', array('controller' => 'goods' , 'action' => 'delete'), array('/Good/id'));
+	$this->Grid->addAction('Update', array('controller' => 'goods' , 'action' => 'update'), array('/Good/id'));
+	
+	echo $this->Grid->generate($goods);
+	echo $this->Html->link('Добавить товар', array('controller' => 'goods', 'action' => 'create'));

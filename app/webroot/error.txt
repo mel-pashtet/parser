@@ -1,0 +1,8 @@
+[04-Mar-2015 16:24:43 Europe/Helsinki] Array
+(
+    [take] => 5
+    [skip] => 0
+    [page] => 1
+    [pageSize] => 5
+)
+

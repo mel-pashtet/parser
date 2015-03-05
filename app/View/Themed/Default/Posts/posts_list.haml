@@ -1,0 +1,10 @@
+.row-fluid
+	- if($posts)
+		- foreach ($posts as $post)
+			%ul
+			- if(isset($post['Post']['text']))
+				%li
+					= $this->Html->link($post['Post']['text'], array( 'controller' => 'posts', 'action' => 'view', $post['Post']['id'] ));
+.add-new
+	= $this->Html->link('Добавить пост', array('controller' => 'Posts', 'action' => 'postCreate'));
+			

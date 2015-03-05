@@ -8,30 +8,17 @@
 		= $this->Html->script(array('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'));
 		// = $this->Html->script(array('parser'));
 
-	= $this->Html->css('main')
-	// = $this->Html->css('cake.generic')
+	// = $this->Html->css('main')
+	= $this->Html->css('cake.generic')
 	= $this->fetch('css')
 	= $this->fetch('script')
 	%body
 		#header
-			CakePHP
+			Manegment
+			:php
+				echo $this->element('menu', array('cache' => false));
 		#container
-			.left-panel
-				:php
-					echo $this->Html->link('Спарсить в базу',
-						array(
-							'controller' => 'site',
-							'action' => 'index',
-							'full_base' => true
-						));
-					echo $this->Html->link('Просмотреть базу',
-						array(
-							'controller' => 'items',
-							'action' => 'listItems',
-							'full_base' => true
-						));
-			.right-panel
-				= $this->Session->flash()
+			#content
 				= $this->fetch('content')
 
 		#footer
