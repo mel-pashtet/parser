@@ -3,6 +3,7 @@
 	<div id="grid"></div>
 	<div id="modal"></div>
 	<div id="details"></div>
+	<div id="addPrice"></div>
 	<script>
 		var wnd,
 			detailsTemplate;
@@ -16,20 +17,19 @@
 				],
 				transport: {
 					read: {
-						url:"<?php echo $this->Html->url('/partners/getPartners',true)?>",
+						url:"<?php echo $this->Html->url('/DotPartners/getPartners',true)?>",
 						dataType:"json",
 					},
 					update: {
-						url:"<?php echo $this->Html->url('/partners/update',true)?>",
+						url:"<?php echo $this->Html->url('/DotPartners/update',true)?>",
 						type:"PUT"
 					},
 					destroy: {
-						url: "<?php echo $this->Html->url('/partners/delete',true)?>",
-						dataType: "jsonp",
+						url: "<?php echo $this->Html->url('/DotPartners/delete',true)?>",
 						type:"PUT"
 					},
 					create: {
-						url :"<?php echo $this->Html->url('/partners/create',true)?>",
+						url :"<?php echo $this->Html->url('/DotPartners/create',true)?>",
 						type:"PUT"
 					},
 
@@ -41,11 +41,21 @@
 					model: {
 						id: "id",
 						fields: {
+							"id": {
+								type: "number",
+								editable: false
+							},
 							"name": {
 								type: "string",
+								validation: {
+									required: true,
+								}
 							},
 							"secret_key": {
-								type: "string"
+								type: "string",
+								validation: {
+									required: true,
+								}
 							},
 							"description": {
 								type: "string"
@@ -70,8 +80,12 @@
 					$("#grid").data("kendoGrid").dataSource.read();
 				})
 			},
+			// remove: function(e) {
+			// 	$("#grid").data("kendoGrid").dataSource.read();
+			// },
 			
 			columns: [
+				{ field: "id", title: 'ID'},
 				{ field: "name", title: 'Имя'},
 				{ field: "secret_key", title: 'Секретный ключ'},
 				{ field: "description", title: 'Описание'},
@@ -81,10 +95,17 @@
 				{ command: [
 					{ name: "edit", text: "" },
 					{ name: "destroy", text: "" },
-					{ text: "Цены товаров", click: showDetails },
 					],
 					title: "Управления"
 				},
+				{
+					command: [
+						{ text: "Цены товаров", click: getPrice },
+						{ text: "Добавить товар", click: addPrice },
+
+					],
+					title: "Управления товарами"
+				}
 			],
 			editable: "popup",
 			toolbar: [
@@ -117,6 +138,7 @@
 					string: {
 						eq: "Такое же как",
 						neq: "Не такое же как",
+						// contains: "Содержит"
 					},
 					//меню фильтров Числового поля
 					number: {
@@ -154,29 +176,61 @@
 
 		wnd = $("#details")
 			.kendoWindow({
-				title: "Price",
+				title: "Добавленые товары",
 				modal: true,
 				visible: false,
 				resizable: true,
-				height: 500,
+				height: 420,
+				width: 1500,
+				close: function(e) {
+				}
+			}).data("kendoWindow");
+
+
+		wndAdd = $("#addPrice")
+			.kendoWindow({
+				title: "Еще не добавленые товары",
+				modal: true,
+				visible: false,
+				resizable: true,
+				height: 420,
 				width: 1500,
 				close: function(e) {
 				}
 			}).data("kendoWindow");
 
 		});
-		function showDetails(e) {
+		
+		function getPrice(e) {
 			e.preventDefault();
 
 			var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
 
 			
 			wnd.refresh({
-				url: "<?php echo $this->Html->url('/PartnerGoods/index',true)?>?id=" + dataItem.id ,
+				url: "<?php echo $this->Html->url('/DotPartnerGoods/index',true)?>?id=" + dataItem.id ,
 			});
 			wnd.center().open();
 
-		}
+		};
+
+		function addPrice(e) {
+			e.preventDefault();
+
+			var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+			
+			wndAdd.refresh({
+				url: "<?php echo $this->Html->url('/DotPartnerGoods/addPrice',true)?>?id=" + dataItem.id ,
+			});
+			wndAdd.center().open();
+
+		};
+
+		
+
+
+
 	</script>
 	
 </div>

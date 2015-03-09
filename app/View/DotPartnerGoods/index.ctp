@@ -44,11 +44,15 @@
 					],
 					transport: {
 						read: {
-							url:"<?php echo $this->Html->url('/PartnerGoods/getPartnerGoods',true)?>?id=" + id ,
+							url:"<?php echo $this->Html->url('/DotPartnerGoods/getPartnerGoods',true)?>?id=" + id ,
 							dataType:"json",
 						},
 						update: {
-							url:"<?php echo $this->Html->url('/PartnerGoods/update',true)?>?id=" + id,
+							url:"<?php echo $this->Html->url('/DotPartnerGoods/update',true)?>?id=" + id,
+							type:"PUT"
+						},
+						destroy: {
+							url:"<?php echo $this->Html->url('/DotPartnerGoods/delete',true)?>?id=" + id,
 							type:"PUT"
 						},
 					},
@@ -58,6 +62,10 @@
 						model: {
 							id: "id",
 							fields: {
+								"id": {
+									type: "number",
+									editable: false
+								},
 								"name": {
 									editable: false
 								},
@@ -89,6 +97,7 @@
 						},
 						dataSource: dataSource,
 						columns: [
+							{ field: "id", title: 'ID'},
 							{ field: "alias", title: 'Алиас'},
 							{ field: "name", title: 'Имя'},
 							{ field: "price_prod", title: 'Цена продажи',
@@ -112,6 +121,7 @@
 							{ command: 
 								[
 									{ name: "edit", text: "" },
+									{ name: "destroy", text: "" },
 								],
 								title: "Управления"
 							},

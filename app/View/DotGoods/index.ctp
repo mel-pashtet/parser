@@ -4,7 +4,7 @@
 	<script>
 	    $(function() {
 		  var dataSource = new kendo.data.DataSource({
-		  	serverPaging: true,
+			serverPaging: true,
 			serverSorting: true,
 			serverFiltering: true,
 			pageSize: 5,
@@ -18,22 +18,21 @@
 			],   
 			transport: {
 				read: {
-					url:"<?php echo $this->Html->url('/goods/getGoods',true)?>",
+					url:"<?php echo $this->Html->url('/DotGoods/getGoods',true)?>",
 					dataType:"json",
 				},
 				update: {
-					url:"<?php echo $this->Html->url('/goods/update',true)?>",
+					url:"<?php echo $this->Html->url('/DotGoods/update',true)?>",
 					type:"PUT"
 				},
 				destroy: {
-					url: "<?php echo $this->Html->url('/goods/delete',true)?>",
-					dataType: "jsonp",
+					url: "<?php echo $this->Html->url('/DotGoods/delete',true)?>",
 					type:"PUT"
 				},
 				create  :{
-			        	url :"<?php echo $this->Html->url('/goods/create',true)?>",
-			        	type:"PUT"
-			    	},
+					url :"<?php echo $this->Html->url('/DotGoods/create',true)?>",
+					type:"PUT"
+				},
 
 			},
 			schema: {
@@ -43,11 +42,21 @@
 				model: {
 					id: "id",
 					fields: {
+						"id": {
+							type: "number",
+							editable: false
+						},
 						"alias": {
-							type: "string"
+							type: "string",
+							validation: {
+								required: true,
+							}
 						},
 						"name": {
-							type: "string"
+							type: "string",
+							validation: {
+								required: true,
+							}
 						},
 						"price_vozv": {
 							type: "number",
@@ -70,14 +79,19 @@
 		  });
 		  
 		  $("#grid").kendoGrid({
-		  	edit: function(e) {
+			edit: function(e) {
 				e.container.data("kendoWindow").bind("close", function () {
 					$("#grid").data("kendoGrid").dataSource.read();
 				})
 			},
+			// remove: function(e) {
+			// 	var grid = $("#grid").data("kendoGrid");
+			// 	grid.refresh();
+			// },
 			
-			dataSource: dataSource,             
+			dataSource: dataSource,         
 			columns: [
+				{ field: "id", title: 'ID'},
 				{ field: "alias", title: 'Алиас'},
 				{ field: "name", title: 'Имя'},
 				{ field: "price_vozv", title: 'Цена возврата',
@@ -128,6 +142,7 @@
 					string: {
 						eq: "Такое же как",
 						neq: "Не такое же как",
+						// contains: "Содержит"
 					},
 					//меню фильтров Числового поля
 					number: {
@@ -165,5 +180,6 @@
 		  });      
 
 	    });
+	
 	</script>
   </div>

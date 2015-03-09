@@ -49,8 +49,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			   <div id="megaStore">
 				   <ul id="menu">
 					   <!-- <li><?php echo $this->Html->link('Домашняя', array('controller'=>'site', 'action' => 'index'));?></li> -->
-					   <li><?php echo $this->Html->link('Управление товарами', array('controller'=>'goods', 'action' => 'index'));?></li>
-					   <li><?php echo $this->Html->link('Управление контрагентами', array('controller'=>'partners', 'action' => 'index'));?></li>
+					   <li><?php echo $this->Html->link('Управление товарами', array('controller'=>'DotGoods', 'action' => 'index'));?></li>
+					   <li><?php echo $this->Html->link('Управление контрагентами', array('controller'=>'DotPartners', 'action' => 'index'));?></li>
 					   <? if( $this->Session->read('Auth.User') ) {?>
 							<li id="users"><?php echo $this->Html->link('Выход', array('controller'=>'users', 'action' => 'logout'));?></li>
 					   <?}?>

@@ -1,6 +1,6 @@
 <head>
 <?php
-    echo $this->Html->css('cake.generic');
+	echo $this->Html->css('cake.generic');
 ?>
 </head>
 <div class="users form">
@@ -8,7 +8,7 @@
 <?php echo $this->Form->create('User'); ?>
 	<fieldset>
 		<legend>
-			<?php echo __('Please enter your username and password'); ?>
+			<?php echo __('Введите логин и пароль'); ?>
 		</legend>
 		<?php echo $this->Form->input('username');
 		echo $this->Form->input('password');

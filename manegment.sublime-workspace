@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"jso",
+				"joins"
+			],
+			[
+				"filta",
+				"filterable	index.ctp"
+			],
+			[
+				"array",
+				"array_merge"
+			],
+			[
+				"price",
+				"price_define	index.ctp"
+			],
+			[
+				"modal",
+				"modalGrid	index.ctp"
+			],
+			[
+				"des",
+				"destroy()	bootstrap.js"
+			],
+			[
+				"arra",
+				"arrayForGrid"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
 				"res",
 				"result"
 			],
@@ -42,10 +74,6 @@
 			[
 				"ta",
 				"tagName"
-			],
-			[
-				"arra",
-				"array_keys"
 			],
 			[
 				"bes",
@@ -216,10 +244,6 @@
 				"print_r"
 			],
 			[
-				"price",
-				"priceData"
-			],
-			[
 				"as",
 				"asXML"
 			],
@@ -388,26 +412,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/Config/database.php",
-			"settings":
-			{
-				"buffer_size": 3037,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Model/User.php",
-			"settings":
-			{
-				"buffer_size": 724,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Model/Good.php",
 			"settings":
 			{
-				"buffer_size": 57,
+				"buffer_size": 94,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Partner.php",
+			"settings":
+			{
+				"buffer_size": 105,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/PartnerGood.php",
+			"settings":
+			{
+				"buffer_size": 135,
 				"line_ending": "Unix"
 			}
 		},
@@ -415,7 +439,126 @@
 			"file": "app/Controller/AppController.php",
 			"settings":
 			{
-				"buffer_size": 1897,
+				"buffer_size": 1853,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Layouts/default.ctp",
+			"settings":
+			{
+				"buffer_size": 3492,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Config/routes.php",
+			"settings":
+			{
+				"buffer_size": 1641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Users/login.ctp",
+			"settings":
+			{
+				"buffer_size": 431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Goods/index.ctp",
+			"settings":
+			{
+				"buffer_size": 4052,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ":php\n	print_r($goods);die;\n	// $this->Grid->addColumn( __('شناسه'), \"/Page/code\",array('width' => '25%'));\n	$this->Grid->addColumn('Id', '/Good/id', array(\n		'width' => '15%',\n		'linkable' => array(\n			'url' => array(\n				'action' => 'details'\n			),\n			'trailingParams' => array(\n				'/Page/id'\n			)\n		)\n	));\n	\n	$this->Grid->addColumn('alias', '/Good/alias', array('width' => '15%'));\n	$this->Grid->addColumn('name', '/Good/name', array('width' => '15%'));\n	$this->Grid->addColumn('prise Zakup', '/Good/price_zakup', array('width' => '15%'));\n	$this->Grid->addColumn('prise Prod', '/Good/price_prod', array('width' => '15%'));\n	$this->Grid->addColumn('prise Vozv', '/Good/price_vozv', array('width' => '15%'));\n\n	$this->Grid->addAction('Delete', array('controller' => 'goods' , 'action' => 'delete'), array('/Good/id'));\n	$this->Grid->addAction('Update', array('controller' => 'goods' , 'action' => 'update'), array('/Good/id'));\n	\n	echo $this->Grid->generate($goods);\n	echo $this->Html->link('Добавить товар', array('controller' => 'goods', 'action' => 'create'));",
+			"file": "app/View/Goods/index.haml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1065,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".row-fluid\n	- if($posts)\n		- foreach ($posts as $post)\n			%ul\n			- if(isset($post['Post']['text']))\n				%li\n					= $this->Html->link($post['Post']['text'], array( 'controller' => 'posts', 'action' => 'view', $post['Post']['id'] ));\n.add-new\n	= $this->Html->link('Добавить пост', array('controller' => 'Posts', 'action' => 'postCreate'));\n			\n",
+			"file": "app/View/Goods/posts_list.haml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".title\n	Редактировать товар\n= $this->element('form_goods')\n",
+			"file": "app/View/Goods/update.haml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "- if(!isset($post['Post']))\n	- return;\n.row-fluid\n	= $post['Post']['id']\n	'=>'\n	= $post['Post']['text']\n.update\n	= $this->Html->link('Редактировать пост', array('controller' => 'Posts', 'action' => 'postUpdate', $post['Post']['id']));\n.delete\n	= $this->Html->link('Удалить пост', array('controller' => 'Posts', 'action' => 'postDelete', $post['Post']['id']));\n",
+			"file": "app/View/Goods/view.haml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Partners/index.ctp",
+			"settings":
+			{
+				"buffer_size": 4182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/PartnerGoods/index.ctp",
+			"settings":
+			{
+				"buffer_size": 5344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Config/core.php",
+			"settings":
+			{
+				"buffer_size": 14446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nclass ItemsController extends AppController {\n	public $uses = array('ItemPhotos', 'Item');\n\n	// public $components = array('Paginator');\n\n	// public $paginate = array(\n	// 	'limit' => 1,\n	// );\n\n	function create() {\n		$success = false;\n		$count = 0;\n		if(!isset($this->data['results'])) {\n			die (json_encode(array(\n				'success' => $success,\n				'count' => $count,\n			)));\n		}\n		foreach ($this->data['results'] as $key => $oneItem) {\n		\n			foreach ($oneItem as $key => $value) {\n				if($key == 'itemPhotos'){\n					$photos = $value;\n\n				}\n				$result[$key] = $value;\n			}\n			\n			$attr = array(\n				'Item' => $result\n			);\n			\n			if (!empty($attr)) {\n				$newItem = new $this->Item();\n				\n				if ($newItem->save($attr)) {\n					$count++;\n					$success = true;\n					\n					foreach ($photos as $key => $value) {\n						$attrItemPhotos = array(\n							'ItemPhotos' => array(\n								'item_id' => $newItem->id,\n								'photo' => $value\n							),\n						);\n						$newFoto = new $this->ItemPhotos();\n						if($newFoto->save($attrItemPhotos)) {\n							$success = true;\n						} else {\n							$success = false;\n						}\n\n					}\n					$this->autoRender = false;\n				} else {\n					$success = false;\n				}\n			}\n		}\n\n		echo json_encode(array(\n			'success' => $success,\n			'count' => $count,\n		));\n\n	}\n\n	public function listItems() {\n		\n		$searchValues = array();\n		$similarItems = array();\n\n		$arraySelect = array(\n			'phone' => 'телефон',\n			'author' => 'автор',\n			'email' => 'email',\n			'title' => 'название',\n		);\n		$searchField = array_flip($arraySelect);\n		$searchField = reset($searchField);\n		\n		if (!empty($this->data)) {\n			$searchField = $this->data['Item']['select'];\n		}\n		\n		$items = $this->Item->find('all', array(\n			'fields' => array(\n				\"$searchField\", \"COUNT($searchField) as Total\"\n			),\n			'group' => array(\n				\"$searchField HAVING Total > 1\"\n			),\n			'order' => array(\n				'Total desc'\n			), \n		));\n\n		$originalRecords = $this->Item->find('all', array(\n			'fields' => array(\n				'*', \"COUNT($searchField) as Total\"\n			),\n			'group' => array(\n				\"$searchField HAVING Total = 1\"\n			),\n			'order' => array(\n				'Total desc'\n			), \n		));\n		\n		foreach ($items as $key => $value) {\n			$searchValues[] = $value['Item'][$searchField]; \n			\n		}\n		$similarItems = $this->Item->find('all', array(\n				'conditions' => array(\n					\"$searchField\" => $searchValues,\n				),\n				'order' => array(\"$searchField\"),\n		));\n\n		// $this->Paginator->settings = $this->paginate;\n		// $this->Paginator->settings['order'] = array(\n		// 	\"$searchField\" => 'desc'\n		// );\n		// $data = $this->Paginator->paginate('Item', array(\n			\n		// 		\"$searchField\" => $searchValues,\n		// 	)\n		// );\n\n		// $data1 = $this->Paginator->paginate('Item', array(\n			\n		// 		\"$searchField !=\" => $searchValues,\n		// 	)\n		// );\n		// print_r($searchField);\n		\n		$this->set(array('similarItems' => $similarItems, 'select' => $arraySelect, 'originalRecords' => $originalRecords));\n	}\n	public function getHrefList(){\n		$this->disableCache();\n		$this->autoRender = false;\n\n		$hrefs = $this->Item->find('list',\n			array(\n				'fields' => 'original_url',\n			)\n		);\n		return $hrefs;\n	}\n\n	\n\n}\n",
+			"file": "app/Controller/ItemsController.php",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 3148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/menu.ctp",
+			"settings":
+			{
+				"buffer_size": 827,
 				"line_ending": "Unix"
 			}
 		},
@@ -428,10 +571,13 @@
 			}
 		},
 		{
-			"file": "app/View/Layouts/default.haml",
+			"contents": "%h2\n	Создать товар\n= $this->element('form_goods')\n",
+			"file": "app/View/Goods/create.haml",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 1094,
+				"buffer_size": 50,
 				"line_ending": "Unix"
 			}
 		},
@@ -439,31 +585,34 @@
 			"file": "app/Controller/GoodsController.php",
 			"settings":
 			{
-				"buffer_size": 3606,
+				"buffer_size": 2949,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/View/Goods/index.haml",
+			"file": "app/Controller/PartnerGoodsController.php",
 			"settings":
 			{
-				"buffer_size": 342,
+				"buffer_size": 4788,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "app/Controller/PartnersController.php",
+			"settings":
+			{
+				"buffer_size": 2381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nclass PostsController extends AppController {\n	var $uses = array('User', 'Post');\n	public function postsList() {\n		$posts = $this->Post->find('all');\n		$this->set('posts', $posts);\n	}\n\n	public function view( $id = null ) {\n		$this->Post->id = $id;\n		$this->set('post', $this->Post->read());\n\n	}\n\n	function postCreate() {\n		$users = $this->User->find('list', array(\n			'fields' => array('User.id', 'User.user_name'),\n		));\n		if (!empty($this->data)) {\n			\n			if ($this->Post->save($this->data))	{\n				$this->redirect( array('controller' => 'site', 'action' => 'index') );\n			}\n		}\n		$this->set(array('users' => $users));\n	}\n\n	function postUpdate($id = null) {\n		$users = $this->User->find('list', array(\n			'fields' => array('User.id', 'User.user_name')\n		));\n		if (empty($this->data)) {\n\n				$this->Post->id = $id;\n				$this->data = $this->Post->read();\n		}\n		else {\n			if ($this->Post->save($this->data['Post']))\n			{\n				$this->flash('Your post has been updated.','/posts/view/'.$id);\n			}\n		}\n		$this->set(array('users' => $users));\n	}\n\n	function postDelete($id = null) {\n		$this->Post->delete($id);\n		$this->flash('The post with id: '.$id.' has been deleted.', '/posts/postsList');\n	}\n}\n",
 			"file": "app/Controller/PostsController.php",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 1198,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Users/add.ctp",
-			"settings":
-			{
-				"buffer_size": 394,
 				"line_ending": "Unix"
 			}
 		}
@@ -546,37 +695,63 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/var/www/cakephp",
-		"/var/www/cakephp/app",
-		"/var/www/cakephp/app/Config",
-		"/var/www/cakephp/app/Controller",
-		"/var/www/cakephp/app/Model",
-		"/var/www/cakephp/app/View",
-		"/var/www/cakephp/app/View/Goods",
-		"/var/www/cakephp/app/View/Posts",
-		"/var/www/cakephp/app/View/Site",
-		"/var/www/cakephp/app/tmp",
-		"/var/www/cakephp/app/webroot",
-		"/var/www/cakephp/sass",
-		"/var/www/cakephp/sass/src"
-	],
 	"file_history":
 	[
+		"/var/www/cakephp/app/webroot/kengoGrid/examples/datasource/remote-operations.html",
+		"/var/www/cakephp/README.md",
+		"/var/www/cakephp/app/webroot/css/cake.generic.css",
+		"/var/www/cakephp/app/webroot/css/default.css",
+		"/var/www/cakephp/app/View/Themed/Default/Users/login.ctp",
+		"/var/www/cakephp/app/View/Site/index.ctp",
+		"/var/www/cakephp/app/webroot/css/my.css",
+		"/home/mel/.cache/.fr-M3EX0J/start.php",
+		"/home/mel/.cache/.fr-zidGDX/index.php",
+		"/home/mel/.cache/.fr-AoueFk/index.php",
+		"/home/mel/.cache/.fr-XaoZtZ/index.html",
+		"/var/www/cakephp/app/Controller/PostsController.php",
+		"/var/www/cakephp/app/View/Themed/Default/webroot/css/default.css",
+		"/var/www/cakephp/app/Plugin/DataGridder/View/Helper/DataGridHelper.php",
+		"/var/www/cakephp/app/Plugin/CakeGrid/View/Elements/table/grid_headers.ctp",
+		"/var/www/cakephp/app/Plugin/CakeGrid/View/Elements/table/grid_full.ctp",
+		"/var/www/cakephp/app/Plugin/CakeGrid/View/Helper/GridHelper.php",
+		"/home/mel/Downloads/960-fluid-cakephp-bake-template/app/views/layouts/default.ctp",
+		"/var/www/cakephp/app/View/Partners/index.haml",
+		"/var/www/cakephp/app/View/Goods/index.haml",
+		"/var/www/cakephp/app/Config/bootstrap.php",
+		"/var/www/cakephp/app/Controller/ItemsController.php",
+		"/var/www/cakephp/app/View/Goods/create.haml",
+		"/var/www/cakephp/app/View/Goods/update.haml",
+		"/var/www/cakephp/app/View/Layouts/default1.ctp",
+		"/var/www/cakephp/app/View/Layouts/default.haml",
+		"/var/www/cakephp/app/webroot/js/app.js",
+		"/var/www/cakephp/app/View/Elements/form_goods.haml",
+		"/var/www/cakephp/app/View/PartnerGoods/view.haml",
+		"/var/www/cakephp/app/.htaccess",
+		"/var/www/cakephp/.htaccess",
+		"/home/mel/Downloads/ui-bootstrap-tpls-0.12.1.min.js",
+		"/var/www/cakephp/app/View/Partners/index.ctp",
+		"/var/www/cakephp/app/View/Themed/Default/Elements/menu.ctp",
+		"/var/www/cakephp/app/Config/database.php",
+		"/var/www/cakephp/app/Model/User.php",
+		"/var/www/cakephp/app/View/Layouts/default.ctp",
+		"/home/mel/.cache/.fr-8Kfgzl/app/controllers/dashboards_controller.php",
+		"/var/www/cakephp/app/View/Posts/post_update.haml",
+		"/var/www/cakephp/app/View/Themed/Default/Layouts/default.ctp",
+		"/var/www/cakephp/app/View/Users/add.ctp",
+		"/var/www/cakephp/app/View/Themed/Default/Site/index.ctp",
+		"/var/www/cakephp/app/View/Goods/index.ctp",
+		"/var/www/cakephp/sass/src/main.scss",
+		"/var/www/cakephp/app/Config/core.php",
 		"/var/www/cakephp/app/Model/ItemPhotos.php",
 		"/var/www/cakephp/app/View/Site/index.haml",
 		"/var/www/cakephp/app/View/Posts/posts_list.haml",
 		"/var/www/cakephp/app/View/Goods/add.ctp",
 		"/var/www/cakephp/app/Controller/SiteController.php",
 		"/var/www/cakephp/app/View/Items/list_items.haml",
-		"/var/www/cakephp/sass/src/main.scss",
-		"/var/www/cakephp/app/View/Users/add.ctp",
 		"/var/www/cakephp/app/View/Users/login.ctp",
 		"/var/www/cakephp/app/View/Pages/home.ctp",
 		"/var/www/cakephp/app/Controller/PagesController.php",
 		"/var/www/cakephp/app/Config/routes.php",
-		"/var/www/cakephp/app/Config/core.php",
 		"/var/www/cakephp/app/webroot/css/main.css",
 		"/var/www/cakephp/app/View/Layouts/myLayout.ctp",
 		"/var/www/cakephp/app/View/Items/create.haml",
@@ -649,49 +824,7 @@
 		"/var/www/erm.cartli/index.php",
 		"/var/www/erm.cartli/services/api/log/bestprofit-cron-log.txt~",
 		"/var/www/erm.cartli/services/api/log/bestprofit-cron-log.txt",
-		"/var/www/erm.cartli/script.html",
-		"/var/www/erm.cartli/application/core/spotlight-example.js",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/ServerEvalTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/StringSetBit.php",
-		"/var/www/erm.cartli/bootstrap.js",
-		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/set.php",
-		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/get.php",
-		"/var/www/erm.cartli/block/modules/Messages/handlers/pkp/class.api.php",
-		"/var/www/erm.cartli/services/xml.class.php",
-		"/var/www/erm.cartli/lib/PHPMailer/language/phpmailer.lang-ka.php",
-		"/var/www/erm.cartli/block/modules/Messages/handlers/get_youdo.php",
-		"/var/www/erm.cartli/services/callback/call_hangup_predictive.php",
-		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/set.php",
-		"/var/www/erm.cartli/simpl5/src/tinySIP/src/api/tsip_api_publish.js",
-		"/var/www/erm.cartli/application/ux/TreePicker.js",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPersist.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeySort.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRestore.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRename.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRandom.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyMove.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyKeys.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyExpire.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyExists.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyDump.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyDelete.php",
-		"/var/www/erm.cartli/pkgs/ajax_post.php",
-		"/var/www/erm.cartli/simpl5/jsdoc-toolkit/app/plugins/frameworkPrototype.js",
-		"/var/www/erm.cartli/canvass/ckeditor/_source/plugins/keystrokes/plugin.js",
-		"/var/www/erm.cartli/dobrik/asterisk/usr/local/bin/dialout_predictive_lidvertex_kz.py",
-		"/var/www/erm.cartli/dobrik/potochka/kuznichuk/load_phones.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Cluster/Distribution/KetamaPureRingTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyRenamePreserveTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Cluster/Distribution/KetamaPureRing.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseTimeToLiveTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyRenamePreserve.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/Processor/KeyPrefixProcessorTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseExpireAtTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPreciseTimeToLive.php",
-		"/var/www/erm.cartli/redisadmin/predis/tests/Predis/Command/KeyPreciseExpireTest.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/Processor/KeyPrefixProcessor.php",
-		"/var/www/erm.cartli/redisadmin/predis/lib/Predis/Command/KeyPreciseExpireAt.php",
-		"/var/www/erm.cartli/block/modules/ProjectsData/handlers/get_PkpList.php"
+		"/var/www/erm.cartli/script.html"
 	],
 	"find":
 	{
@@ -712,134 +845,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"post",
-			"Posts",
-			"posts",
-			"12005375",
-			"count_store",
-			"insert_values",
-			"DB::update",
-			"error_log",
-			"DB::",
-			"DB::select",
-			"convert",
-			"$a",
-			"a",
-			"return $node;",
-			"$arr",
-			"arr",
+			"3",
+			"  ",
+			"GridName",
+			"ops",
+			"  ",
+			"Change",
+			"change",
+			"users form",
+			"authMessage",
+			"users",
+			"users form",
+			"price_zakup",
+			"price_prod",
+			"price_lead_define",
+			"price_define",
+			"}",
+			"price_lead",
+			"number",
+			"age",
+			"{ command: ",
+			"   ",
+			"scoped",
+			"   ",
+			"3",
+			"== 'false'",
+			"price_lead",
+			"insAttr",
+			"price_lead",
+			"filterable",
+			"    ",
+			"   ",
+			"partner",
+			"partners",
+			"Partner",
+			"  ",
+			"serverAggregates",
+			"pageSize",
+			"filter",
+			"or",
 			"value",
-			"convert",
-			"getXMLRoot",
-			"gg",
-			"xml",
-			"appendChild",
-			"createXML",
-			"add_metters",
-			"for_filter",
-			"bestProfitOffersStore",
-			"globalDottProOffersStore",
-			"offer",
-			"v",
-			"get_Store",
-			"bestProfitOffersStore",
-			"store",
-			"201",
-			"Hotpartner",
-			"alias",
-			"globalDottProOffersStore",
-			"dottProOffersStore",
-			"DottProOffersStore",
-			"dottProOffersStore",
-			"get_StoreData",
-			"eader: I('offer')",
-			"hotpartnerKurierCitiesStore",
-			"get_StoreData",
-			"price",
-			"meekro_connect_erm",
-			"fio",
-			"date",
-			"bestprofit",
-			"BestProfit",
-			"bestprofit",
-			"count_store",
-			"app_code",
-			"count_store",
-			"get",
-			"get_list_services",
-			"list_services",
+			"condition",
+			"groupable",
+			"pageSize",
+			"take",
 			"\"",
-			"$result = call_user_func_array(array($api, 'send_services'), $send_values);",
-			"GLOBAL_PEREZVON_PLAN",
-			"countCalls",
-			"getProjectPerezvonDates",
-			"seta_out_P",
-			"base_Seta",
-			"dottWindow",
-			"console",
-			"setValue",
-			"preDott",
-			"getForm",
-			"dottForm_",
-			"ttn_number",
-			"'ttn_number1' + order_id",
-			"preDott",
-			"ttn_number1",
-			"preDott",
-			"allowBlank",
-			"Value",
-			"value",
-			"Value",
-			"value",
-			"ttn_number1",
-			"dottWindow",
-			"preDott",
-			"redirection",
-			"preDott",
-			"blur: functi",
-			"addListener",
-			"onblur",
-			"cdr_data.allHttpQuery",
-			"preDott",
-			"cdr_data",
-			"preDott",
-			"dottWindow",
-			"acceptFieldset",
-			"ttn_number",
-			"ttnElem",
-			"dot",
-			"bestprofit",
-			"bestprofitWindow",
-			"double",
-			"BestprofitForm_",
-			"sheet_name",
-			"statusBestprofit",
-			"statusLidvertex",
-			"lead_vertextTable_grid",
-			"lead_vertextTableGrid",
-			"storelead_vertext",
-			"lead_vertex_store",
-			"lead_vertextTableModel",
-			"addr",
-			"smar",
-			"smart_shopTable_grid",
-			"smart_shopTableGrid",
-			"storesmart_shop",
-			"smart_shopTableModel",
-			"statusSmartShop",
-			"smart_shopTab",
-			"smart_shopTableGrid",
-			"bestprofit",
-			"bestprofit_A",
-			"lidvertex_P",
-			"smart_shopTableGrid",
-			"bestprofit_A",
-			"bestprofitTableGrid",
-			"smart_shopTableGrid",
-			"smart_shop_store",
-			"storesmart_shop",
-			"bestprofitTableGrid",
-			"lead_vertex_store"
+			"'",
+			"\"",
+			"?id=\" + dataItem.id ",
+			"kendoWindow",
+			"\"kendoWindow\"",
+			"showDetails",
+			"   ",
+			"partnerGood",
+			"Details",
+			"details",
+			"names",
+			"=\"",
+			"?>",
+			">",
+			"Good.",
+			"Good",
+			"parnter_id",
+			"Good.",
+			"\"",
+			"    ",
+			"partners",
+			"good",
+			"Good",
+			"Grid",
+			"grid",
+			"kendoGrid",
+			"Grid",
+			"grid",
+			"kendoGrid",
+			"partners",
+			"example",
+			"   ",
+			"  ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"query",
+			"good",
+			"goods",
+			"Good",
+			"goods",
+			"Goods",
+			"goods",
+			"Good.",
+			"create",
+			"Good.",
+			"}",
+			"{ ",
+			"editable",
+			"OnChange",
+			"data",
+			"Good.",
+			".",
+			"  ",
+			"    ",
+			"Partner",
+			"ui-grid",
+			"ops",
+			"Ingredient",
+			"User",
+			"goods",
+			"Good",
+			"good",
+			"Good",
+			"good",
+			"Good",
+			"))",
+			"    ",
+			"users",
+			"'label'",
+			"'options' => $users ? $users : null, ",
+			"recipe",
+			"Recipe",
+			"users"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -857,85 +990,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Config/database.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3037,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2741,
-								2741
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 420.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Model/User.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 724,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								694,
-								694
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/Model/Good.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 57,
+						"buffer_size": 94,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								64,
+								64
 							]
 						],
 						"settings":
@@ -947,7 +1019,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Model/Partner.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Model/PartnerGood.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -956,15 +1089,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1897,
+						"buffer_size": 1853,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1350,
-								1350
+								1386,
+								1386
 							]
 						],
 						"settings":
@@ -974,107 +1107,166 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Controller/UsersController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/View/Layouts/default.haml",
+					"buffer": 4,
+					"file": "app/View/Layouts/default.ctp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1094,
+						"buffer_size": 3492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								625,
-								625
+								2109,
+								2109
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP Haml/PHP Haml.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 68.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Config/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1150,
+								1150
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "app/Controller/GoodsController.php",
+					"file": "app/View/Users/login.ctp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3606,
+						"buffer_size": 431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								253,
-								253
+								0,
+								431
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/View/Goods/index.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 6,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "app/View/Goods/index.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/View/Goods/posts_list.haml",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1085,67 +1277,95 @@
 						"selection":
 						[
 							[
-								87,
-								87
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP Haml/PHP Haml.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "app/Controller/PostsController.php",
+					"buffer": 10,
+					"file": "app/View/Goods/update.haml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1198,
+						"buffer_size": 59,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "app/View/Users/add.ctp",
+					"buffer": 11,
+					"file": "app/View/Goods/view.haml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 394,
+						"buffer_size": 360,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								92,
-								92
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/View/Partners/index.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
 							]
 						],
 						"settings":
@@ -1158,7 +1378,311 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/View/PartnerGoods/index.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1874,
+								1874
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 572.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/Config/core.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1205,
+								1205
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4422.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/Controller/ItemsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/View/Elements/menu.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/Controller/UsersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1522,
+								1522
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 250.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/View/Goods/create.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/Controller/GoodsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2681,
+								2681
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 838.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/Controller/PartnerGoodsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3568,
+								3568
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1932.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/Controller/PartnersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1890,
+								1890
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 588.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "app/Controller/PostsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
 					"type": "text"
 				}
 			]
@@ -1215,6 +1739,14 @@
 		"selected_items":
 		[
 			[
+				"rou",
+				"app/Config/routes.php"
+			],
+			[
+				"",
+				"app/Plugin/CakeGrid/View/Elements/table/grid_full.ctp"
+			],
+			[
 				"pkp",
 				"js/projectAnkets/pkp.js"
 			],
@@ -1229,10 +1761,6 @@
 			[
 				"get_s",
 				"block/json/get_StoreData.php"
-			],
-			[
-				"",
-				"js/projectAnkets/Bestprofit.js"
 			],
 			[
 				"get_sto",
@@ -1626,7 +2154,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 267.0,
+	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
